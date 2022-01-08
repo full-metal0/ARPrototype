@@ -25,6 +25,8 @@
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
 		A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17C2789C196008F3A7B /* ControlButton.swift */; };
+		A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */; };
+		A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
 		A8CCE17C2789C196008F3A7B /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
+		A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,10 @@
 		A847498E2787518B00419FA1 /* ARPtorotype */ = {
 			isa = PBXGroup;
 			children = (
-				A847498F2787518B00419FA1 /* AppDelegate.swift */,
+				A84749912787518B00419FA1 /* ContentView.swift */,
 				A8615BE92789AF0D001C0C01 /* Views */,
+				A847498F2787518B00419FA1 /* AppDelegate.swift */,
+				A8C5EC272789DFC600989E55 /* Models */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
 				A8615BD82789ACC5001C0C01 /* 3D Assets */,
 				A84749972787519000419FA1 /* Preview Content */,
@@ -167,8 +173,8 @@
 		A8615BE92789AF0D001C0C01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A84749912787518B00419FA1 /* ContentView.swift */,
 				A8615BEA2789BCC4001C0C01 /* ControlViews */,
+				A8CCE1802789DAB1008F3A7B /* BrowseViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +188,22 @@
 				A8CCE17C2789C196008F3A7B /* ControlButton.swift */,
 			);
 			path = ControlViews;
+			sourceTree = "<group>";
+		};
+		A8C5EC272789DFC600989E55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A8CCE1802789DAB1008F3A7B /* BrowseViews */ = {
+			isa = PBXGroup;
+			children = (
+				A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */,
+				A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */,
+			);
+			path = BrowseViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,10 +345,12 @@
 			files = (
 				A84749922787518B00419FA1 /* ContentView.swift in Sources */,
 				A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */,
+				A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */,
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
 				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A84749902787518B00419FA1 /* AppDelegate.swift in Sources */,
+				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

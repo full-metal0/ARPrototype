@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ControlButtonBar: View {
+    
+    @Binding var showBrowse: Bool
+    
     var body: some View {
         HStack {
             ControlButton(systemIcon: "clock.fill") {
@@ -17,7 +20,9 @@ struct ControlButtonBar: View {
             Spacer()
             
             ControlButton(systemIcon: "square.grid.2x2") {
-                print("button 2 pressed")
+                self.showBrowse.toggle()
+            }.sheet(isPresented: $showBrowse) {
+                BrowseView(showBrowse: $showBrowse)
             }
             
             Spacer()
@@ -36,7 +41,7 @@ struct ControlButtonBar: View {
 
 struct ControlButtonBar_Previews: PreviewProvider {
     static var previews: some View {
-        ControlButtonBar()
+        ControlButtonBar(showBrowse: Binding.constant(false))
             .previewLayout(.sizeThatFits)
     }
 }
