@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HorizontalGrid: View {
     
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
     private let gridItemLayout = [GridItem(.fixed(150))]
     var title: String
@@ -32,6 +33,8 @@ struct HorizontalGrid: View {
                         
                         ItemButton(model: model) {
                             model.asyncLoadARModelEntity()
+                            self.placementSettings.selectedModel = model
+                            
                             self.showBrowse = false
                         }
                     }

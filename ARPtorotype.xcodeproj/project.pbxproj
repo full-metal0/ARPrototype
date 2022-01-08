@@ -24,6 +24,9 @@
 		A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BE72789AF06001C0C01 /* ControlView.swift */; };
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
+		A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CA278A18E3004C25E0 /* PlacementSettings.swift */; };
+		A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CD278A1E25004C25E0 /* PlacementButton.swift */; };
+		A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CF278A1EBE004C25E0 /* PlacementView.swift */; };
 		A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2A2789E0EC00989E55 /* ARModel.swift */; };
 		A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */; };
 		A8C5EC2F2789E61D00989E55 /* CategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */; };
@@ -71,6 +74,9 @@
 		A8615BE72789AF06001C0C01 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
+		A89551CA278A18E3004C25E0 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		A89551CD278A1E25004C25E0 /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
+		A89551CF278A1EBE004C25E0 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		A8C5EC2A2789E0EC00989E55 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
 		A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelStore.swift; sourceTree = "<group>"; };
 		A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGrid.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 				A84749912787518B00419FA1 /* ContentView.swift */,
 				A8615BEA2789BCC4001C0C01 /* ControlViews */,
 				A8CCE1802789DAB1008F3A7B /* BrowseViews */,
+				A89551CC278A1E02004C25E0 /* PlacementViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,11 +205,21 @@
 			path = ControlViews;
 			sourceTree = "<group>";
 		};
+		A89551CC278A1E02004C25E0 /* PlacementViews */ = {
+			isa = PBXGroup;
+			children = (
+				A89551CF278A1EBE004C25E0 /* PlacementView.swift */,
+				A89551CD278A1E25004C25E0 /* PlacementButton.swift */,
+			);
+			path = PlacementViews;
+			sourceTree = "<group>";
+		};
 		A8C5EC272789DFC600989E55 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A8C5EC2A2789E0EC00989E55 /* ARModel.swift */,
 				A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */,
+				A89551CA278A18E3004C25E0 /* PlacementSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,15 +375,18 @@
 				A84749922787518B00419FA1 /* ContentView.swift in Sources */,
 				A8C5EC2F2789E61D00989E55 /* CategoryGrid.swift in Sources */,
 				A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */,
+				A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */,
 				A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */,
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
 				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
 				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,
 				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
+				A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
 				A84749902787518B00419FA1 /* AppDelegate.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
+				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
