@@ -128,9 +128,8 @@
 		A847498E2787518B00419FA1 /* ARPtorotype */ = {
 			isa = PBXGroup;
 			children = (
-				A84749912787518B00419FA1 /* ContentView.swift */,
-				A8615BE92789AF0D001C0C01 /* Views */,
 				A847498F2787518B00419FA1 /* AppDelegate.swift */,
+				A8615BE92789AF0D001C0C01 /* Views */,
 				A8C5EC272789DFC600989E55 /* Models */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
 				A8615BD82789ACC5001C0C01 /* 3D Assets */,
@@ -181,6 +180,7 @@
 		A8615BE92789AF0D001C0C01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A84749912787518B00419FA1 /* ContentView.swift */,
 				A8615BEA2789BCC4001C0C01 /* ControlViews */,
 				A8CCE1802789DAB1008F3A7B /* BrowseViews */,
 			);

@@ -31,7 +31,7 @@ struct HorizontalGrid: View {
                         let model = items[index]
                         
                         ItemButton(model: model) {
-                            //press button
+                            model.asyncLoadARModelEntity()
                             self.showBrowse = false
                         }
                     }

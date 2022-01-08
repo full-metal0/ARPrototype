@@ -10,23 +10,25 @@ import RealityKit
 import Combine
 
 enum ARModelCategory: CaseIterable {
-    case chair
-    case decor
-    case statuette
+case chair
+case decor
+case statuette
     
     var label: String {
-            switch self {
-            case .chair:
-                return "Chairs"
-            case .decor:
-                return "Decor"
-            case .statuette:
-                return "Statuettes"
+        switch self {
+        case .chair:
+            return "Chairs"
+        case .decor:
+            return "Decor"
+        case .statuette:
+            return "Statuettes"
         }
     }
 }
 
 class ARModel {
+    
+    private var cancellable: AnyCancellable?
     
     var name: String
     var category: ARModelCategory
@@ -39,5 +41,26 @@ class ARModel {
         self.category = category
         self.scaleCompensation = scaleCompensation
         self.thumbnail = UIImage(named: name) ?? UIImage(systemName: "photo")!
+    }
+    
+    func asyncLoadARModelEntity() {
+        let fileName = self.name + ".usdz"
+        
+        self.cancellable = ModelEntity.loadModelAsync(named: fileName)
+            .sink { loadCompletion in
+                
+                switch loadCompletion {
+                case .failure(let error):
+                    print("Load error occured for \(fileName) - Error: \(error.localizedDescription)")
+                case .finished:
+                    break
+                }
+            } receiveValue: { modelEntity in
+                self.modelEntity = modelEntity
+                // check
+                self.modelEntity?.scale *= self.scaleCompensation
+                print("Entity was loaded")
+            }
+        
     }
 }
