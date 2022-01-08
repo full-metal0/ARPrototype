@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		A84749902787518B00419FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A847498F2787518B00419FA1 /* AppDelegate.swift */; };
 		A84749922787518B00419FA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749912787518B00419FA1 /* ContentView.swift */; };
-		A84749942787518B00419FA1 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A84749932787518B00419FA1 /* Experience.rcproject */; };
 		A84749962787519000419FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749952787519000419FA1 /* Assets.xcassets */; };
 		A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749982787519000419FA1 /* Preview Assets.xcassets */; };
 		A84749A32787519000419FA1 /* ARPtorotypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749A22787519000419FA1 /* ARPtorotypeTests.swift */; };
 		A84749AD2787519000419FA1 /* ARPtorotypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749AC2787519000419FA1 /* ARPtorotypeUITests.swift */; };
 		A84749AF2787519000419FA1 /* ARPtorotypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749AE2787519000419FA1 /* ARPtorotypeUITestsLaunchTests.swift */; };
+		A8615BDE2789AD13001C0C01 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BD92789AD11001C0C01 /* fender_stratocaster.usdz */; };
+		A8615BDF2789AD13001C0C01 /* chair_black.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDA2789AD11001C0C01 /* chair_black.usdz */; };
+		A8615BE02789AD13001C0C01 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDB2789AD12001C0C01 /* chair_swan.usdz */; };
+		A8615BE12789AD13001C0C01 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDC2789AD12001C0C01 /* cup_saucer_set.usdz */; };
+		A8615BE22789AD13001C0C01 /* amogus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDD2789AD13001C0C01 /* amogus.usdz */; };
+		A8615BE52789AD26001C0C01 /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BE32789AD24001C0C01 /* toy_car.usdz */; };
+		A8615BE62789AD26001C0C01 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BE42789AD26001C0C01 /* toy_robot_vintage.usdz */; };
+		A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BE72789AF06001C0C01 /* ControlView.swift */; };
+		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
+		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
+		A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17C2789C196008F3A7B /* ControlButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,6 @@
 		A847498C2787518B00419FA1 /* ARPtorotype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPtorotype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A847498F2787518B00419FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84749912787518B00419FA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A84749932787518B00419FA1 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		A84749952787519000419FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84749982787519000419FA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A847499E2787519000419FA1 /* ARPtorotypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPtorotypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +55,17 @@
 		A84749A82787519000419FA1 /* ARPtorotypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPtorotypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84749AC2787519000419FA1 /* ARPtorotypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPtorotypeUITests.swift; sourceTree = "<group>"; };
 		A84749AE2787519000419FA1 /* ARPtorotypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPtorotypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8615BD92789AD11001C0C01 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		A8615BDA2789AD11001C0C01 /* chair_black.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_black.usdz; sourceTree = "<group>"; };
+		A8615BDB2789AD12001C0C01 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		A8615BDC2789AD12001C0C01 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		A8615BDD2789AD13001C0C01 /* amogus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = amogus.usdz; sourceTree = "<group>"; };
+		A8615BE32789AD24001C0C01 /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		A8615BE42789AD26001C0C01 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		A8615BE72789AF06001C0C01 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
+		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
+		A8CCE17C2789C196008F3A7B /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				A847498F2787518B00419FA1 /* AppDelegate.swift */,
-				A84749912787518B00419FA1 /* ContentView.swift */,
-				A84749932787518B00419FA1 /* Experience.rcproject */,
+				A8615BE92789AF0D001C0C01 /* Views */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
+				A8615BD82789ACC5001C0C01 /* 3D Assets */,
 				A84749972787519000419FA1 /* Preview Content */,
 			);
 			path = ARPtorotype;
@@ -128,6 +148,40 @@
 				A84749AE2787519000419FA1 /* ARPtorotypeUITestsLaunchTests.swift */,
 			);
 			path = ARPtorotypeUITests;
+			sourceTree = "<group>";
+		};
+		A8615BD82789ACC5001C0C01 /* 3D Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A8615BE32789AD24001C0C01 /* toy_car.usdz */,
+				A8615BE42789AD26001C0C01 /* toy_robot_vintage.usdz */,
+				A8615BDD2789AD13001C0C01 /* amogus.usdz */,
+				A8615BDA2789AD11001C0C01 /* chair_black.usdz */,
+				A8615BDB2789AD12001C0C01 /* chair_swan.usdz */,
+				A8615BDC2789AD12001C0C01 /* cup_saucer_set.usdz */,
+				A8615BD92789AD11001C0C01 /* fender_stratocaster.usdz */,
+			);
+			path = "3D Assets";
+			sourceTree = "<group>";
+		};
+		A8615BE92789AF0D001C0C01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A84749912787518B00419FA1 /* ContentView.swift */,
+				A8615BEA2789BCC4001C0C01 /* ControlViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8615BEA2789BCC4001C0C01 /* ControlViews */ = {
+			isa = PBXGroup;
+			children = (
+				A8615BE72789AF06001C0C01 /* ControlView.swift */,
+				A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */,
+				A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */,
+				A8CCE17C2789C196008F3A7B /* ControlButton.swift */,
+			);
+			path = ControlViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +289,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */,
+				A8615BE52789AD26001C0C01 /* toy_car.usdz in Resources */,
+				A8615BE62789AD26001C0C01 /* toy_robot_vintage.usdz in Resources */,
 				A84749962787519000419FA1 /* Assets.xcassets in Resources */,
+				A8615BE22789AD13001C0C01 /* amogus.usdz in Resources */,
+				A8615BE12789AD13001C0C01 /* cup_saucer_set.usdz in Resources */,
+				A8615BDE2789AD13001C0C01 /* fender_stratocaster.usdz in Resources */,
+				A8615BE02789AD13001C0C01 /* chair_swan.usdz in Resources */,
+				A8615BDF2789AD13001C0C01 /* chair_black.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84749922787518B00419FA1 /* ContentView.swift in Sources */,
+				A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */,
+				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
+				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
+				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A84749902787518B00419FA1 /* AppDelegate.swift in Sources */,
-				A84749942787518B00419FA1 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +490,7 @@
 				DEVELOPMENT_TEAM = 7QM3B3CVCZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required for AR experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -457,7 +521,7 @@
 				DEVELOPMENT_TEAM = 7QM3B3CVCZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Required for AR experience";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
