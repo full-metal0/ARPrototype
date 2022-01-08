@@ -14,7 +14,7 @@ struct BrowseView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                HorizontalGrid()
+                CategoryGrid(showBrowse: $showBrowse)
             }
             .navigationBarTitle(Text("Browse"), displayMode: .large)
             .navigationBarItems(trailing:

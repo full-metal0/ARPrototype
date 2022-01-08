@@ -24,6 +24,10 @@
 		A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BE72789AF06001C0C01 /* ControlView.swift */; };
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
+		A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2A2789E0EC00989E55 /* ARModel.swift */; };
+		A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */; };
+		A8C5EC2F2789E61D00989E55 /* CategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */; };
+		A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC302789FD6100989E55 /* ItemButton.swift */; };
 		A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17C2789C196008F3A7B /* ControlButton.swift */; };
 		A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */; };
 		A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */; };
@@ -67,6 +71,10 @@
 		A8615BE72789AF06001C0C01 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
+		A8C5EC2A2789E0EC00989E55 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelStore.swift; sourceTree = "<group>"; };
+		A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGrid.swift; sourceTree = "<group>"; };
+		A8C5EC302789FD6100989E55 /* ItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButton.swift; sourceTree = "<group>"; };
 		A8CCE17C2789C196008F3A7B /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 		A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGrid.swift; sourceTree = "<group>"; };
@@ -193,6 +201,8 @@
 		A8C5EC272789DFC600989E55 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A8C5EC2A2789E0EC00989E55 /* ARModel.swift */,
+				A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,7 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */,
+				A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */,
 				A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */,
+				A8C5EC302789FD6100989E55 /* ItemButton.swift */,
 			);
 			path = BrowseViews;
 			sourceTree = "<group>";
@@ -344,11 +356,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84749922787518B00419FA1 /* ContentView.swift in Sources */,
+				A8C5EC2F2789E61D00989E55 /* CategoryGrid.swift in Sources */,
 				A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */,
 				A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */,
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
+				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
+				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,
 				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
+				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
 				A84749902787518B00419FA1 /* AppDelegate.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 			);

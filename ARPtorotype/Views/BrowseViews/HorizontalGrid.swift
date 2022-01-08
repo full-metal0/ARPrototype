@@ -9,10 +9,17 @@ import SwiftUI
 
 struct HorizontalGrid: View {
     
+    @Binding var showBrowse: Bool
     private let gridItemLayout = [GridItem(.fixed(150))]
+    var title: String
+    var items: [ARModel]
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Category")
+            
+            Separator()
+            
+            Text(title)
                 .font(.title2)
                 .bold()
                 .padding(.leading, 20)
@@ -20,10 +27,13 @@ struct HorizontalGrid: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<5) { index in
-                        Color(UIColor.secondarySystemFill)
-                            .frame(width: 150, height: 150)
-                            .cornerRadius(8)
+                    ForEach(0..<items.count) { index in
+                        let model = items[index]
+                        
+                        ItemButton(model: model) {
+                            //press button
+                            self.showBrowse = false
+                        }
                     }
                 }
                 .padding(.horizontal, 22)
@@ -33,8 +43,10 @@ struct HorizontalGrid: View {
     }
 }
 
-struct HorizontalGrid_Previews: PreviewProvider {
-    static var previews: some View {
-        HorizontalGrid()
+struct Separator: View {
+    var body: some View {
+        Divider()
+            .padding(.horizontal, 20)
+            .padding(.vertical, 10)
     }
 }
