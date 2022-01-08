@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ControlVisibilityToggleButton: View {
     
+    @Binding var isControlVisible: Bool
     
     var body: some View {
         HStack {
@@ -18,9 +19,9 @@ struct ControlVisibilityToggleButton: View {
                 Color.black.opacity(0.25)
                 
                 Button(action: {
-                    print("CV Button pressed")
+                    self.isControlVisible.toggle()
                 }) {
-                    Image(systemName: "rectangle")
+                    Image(systemName: self.isControlVisible ? "rectangle" : "slider.horizontal.below.rectangle")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
                         .buttonStyle(PlainButtonStyle())
@@ -36,7 +37,7 @@ struct ControlVisibilityToggleButton: View {
 
 struct ControlVisibilityToggleButton_Previews: PreviewProvider {
     static var previews: some View {
-        ControlVisibilityToggleButton()
+        ControlVisibilityToggleButton(isControlVisible: Binding.constant(true))
             .previewLayout(.sizeThatFits)
     }
 }

@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct ControlView: View {
+    
+    @Binding var isControlVisible: Bool
+    
     var body: some View {
         VStack {
-            ControlVisibilityToggleButton()
+            ControlVisibilityToggleButton(isControlVisible: $isControlVisible)
             
             Spacer()
             
-            ControlButtonBar()
+            if isControlVisible {
+                ControlButtonBar()
+            }
         }
     }
 }
 
 struct ControlView_Previews: PreviewProvider {
+    static var isControlVisible: Bool = true
+    
     static var previews: some View {
-        ControlView()
+        ControlView(isControlVisible: Binding.constant(true))
             .edgesIgnoringSafeArea(.all)
     }
 }
