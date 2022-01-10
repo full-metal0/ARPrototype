@@ -9,23 +9,6 @@ import SwiftUI
 import RealityKit
 import Combine
 
-enum ARModelCategory: CaseIterable {
-case chair
-case decor
-case statuette
-    
-    var label: String {
-        switch self {
-        case .chair:
-            return "Chairs"
-        case .decor:
-            return "Decor"
-        case .statuette:
-            return "Statuettes"
-        }
-    }
-}
-
 class ARModel {
     
     private var cancellable: AnyCancellable?

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BrowseView: View {
+struct BrowseView: View { // is used in ControlButtonBar view
     
     @Binding var showBrowse: Bool
     

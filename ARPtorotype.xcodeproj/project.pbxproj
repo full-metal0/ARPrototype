@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A84749902787518B00419FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A847498F2787518B00419FA1 /* AppDelegate.swift */; };
 		A84749922787518B00419FA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749912787518B00419FA1 /* ContentView.swift */; };
 		A84749962787519000419FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749952787519000419FA1 /* Assets.xcassets */; };
 		A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749982787519000419FA1 /* Preview Assets.xcassets */; };
@@ -24,6 +23,7 @@
 		A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BE72789AF06001C0C01 /* ControlView.swift */; };
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
+		A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887131F278C53EE00244956 /* ARPrototypeAP.swift */; };
 		A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CA278A18E3004C25E0 /* PlacementSettings.swift */; };
 		A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CD278A1E25004C25E0 /* PlacementButton.swift */; };
 		A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CF278A1EBE004C25E0 /* PlacementView.swift */; };
@@ -55,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		A847498C2787518B00419FA1 /* ARPtorotype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPtorotype.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A847498F2787518B00419FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84749912787518B00419FA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A84749952787519000419FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84749982787519000419FA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		A8615BE72789AF06001C0C01 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
+		A887131F278C53EE00244956 /* ARPrototypeAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPrototypeAP.swift; sourceTree = "<group>"; };
 		A89551CA278A18E3004C25E0 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		A89551CD278A1E25004C25E0 /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
 		A89551CF278A1EBE004C25E0 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		A847498E2787518B00419FA1 /* ARPtorotype */ = {
 			isa = PBXGroup;
 			children = (
-				A847498F2787518B00419FA1 /* AppDelegate.swift */,
+				A887131F278C53EE00244956 /* ARPrototypeAP.swift */,
 				A8615BE92789AF0D001C0C01 /* Views */,
 				A8C5EC272789DFC600989E55 /* Models */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
@@ -380,11 +380,11 @@
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
 				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
 				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,
+				A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */,
 				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
 				A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
-				A84749902787518B00419FA1 /* AppDelegate.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);
