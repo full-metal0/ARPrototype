@@ -29,7 +29,7 @@ class ARModel {
     func asyncLoadARModelEntity() {
         let fileName = self.name + ".usdz"
         
-        self.cancellable = ModelEntity.loadModelAsync(named: fileName)
+        cancellable = ModelEntity.loadModelAsync(named: fileName)
             .sink { loadCompletion in
                 
                 switch loadCompletion {

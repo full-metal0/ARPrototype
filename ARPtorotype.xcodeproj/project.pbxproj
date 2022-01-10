@@ -24,6 +24,9 @@
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
 		A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887131F278C53EE00244956 /* ARPrototypeAP.swift */; };
+		A8871323278CA54600244956 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = A8871322278CA54600244956 /* FocusEntity */; };
+		A8871326278CA6D100244956 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8871325278CA6D100244956 /* CustomARView.swift */; };
+		A8871328278CA9FC00244956 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8871327278CA9FC00244956 /* ARViewContainer.swift */; };
 		A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CA278A18E3004C25E0 /* PlacementSettings.swift */; };
 		A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CD278A1E25004C25E0 /* PlacementButton.swift */; };
 		A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CF278A1EBE004C25E0 /* PlacementView.swift */; };
@@ -74,6 +77,8 @@
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
 		A887131F278C53EE00244956 /* ARPrototypeAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPrototypeAP.swift; sourceTree = "<group>"; };
+		A8871325278CA6D100244956 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		A8871327278CA9FC00244956 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		A89551CA278A18E3004C25E0 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		A89551CD278A1E25004C25E0 /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
 		A89551CF278A1EBE004C25E0 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8871323278CA54600244956 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A84749912787518B00419FA1 /* ContentView.swift */,
+				A8871324278CA6B100244956 /* ARViews */,
 				A8615BEA2789BCC4001C0C01 /* ControlViews */,
 				A8CCE1802789DAB1008F3A7B /* BrowseViews */,
 				A89551CC278A1E02004C25E0 /* PlacementViews */,
@@ -203,6 +210,15 @@
 				A8CCE17C2789C196008F3A7B /* ControlButton.swift */,
 			);
 			path = ControlViews;
+			sourceTree = "<group>";
+		};
+		A8871324278CA6B100244956 /* ARViews */ = {
+			isa = PBXGroup;
+			children = (
+				A8871327278CA9FC00244956 /* ARViewContainer.swift */,
+				A8871325278CA6D100244956 /* CustomARView.swift */,
+			);
+			path = ARViews;
 			sourceTree = "<group>";
 		};
 		A89551CC278A1E02004C25E0 /* PlacementViews */ = {
@@ -251,6 +267,9 @@
 			dependencies = (
 			);
 			name = ARPtorotype;
+			packageProductDependencies = (
+				A8871322278CA54600244956 /* FocusEntity */,
+			);
 			productName = ARPtorotype;
 			productReference = A847498C2787518B00419FA1 /* ARPtorotype.app */;
 			productType = "com.apple.product-type.application";
@@ -323,6 +342,9 @@
 				Base,
 			);
 			mainGroup = A84749832787518B00419FA1;
+			packageReferences = (
+				A8871321278CA54600244956 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = A847498D2787518B00419FA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,6 +400,8 @@
 				A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */,
 				A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */,
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
+				A8871328278CA9FC00244956 /* ARViewContainer.swift in Sources */,
+				A8871326278CA6D100244956 /* CustomARView.swift in Sources */,
 				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
 				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,
 				A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */,
@@ -717,6 +741,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8871321278CA54600244956 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8871322278CA54600244956 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8871321278CA54600244956 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A84749842787518B00419FA1 /* Project object */;
 }
