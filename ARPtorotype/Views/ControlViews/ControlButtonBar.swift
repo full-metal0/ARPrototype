@@ -10,6 +10,7 @@ import SwiftUI
 struct ControlButtonBar: View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
+    @Binding var showSettings: Bool
     
     var body: some View {
         HStack {
@@ -26,7 +27,9 @@ struct ControlButtonBar: View {
             Spacer()
             
             ControlButton(systemIcon: "slider.horizontal.3") {
-                print("button 3 pressed")
+                self.showSettings.toggle()
+            }.sheet(isPresented: $showSettings) {
+                SettingsView(showSettings: $showSettings)
             }
 
         }
@@ -39,7 +42,7 @@ struct ControlButtonBar: View {
 
 struct ControlButtonBar_Previews: PreviewProvider {
     static var previews: some View {
-        ControlButtonBar(showBrowse: Binding.constant(false))
+        ControlButtonBar(showBrowse: Binding.constant(false), showSettings: Binding.constant(false))
             .previewLayout(.sizeThatFits)
     }
 }

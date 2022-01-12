@@ -40,6 +40,10 @@
 		A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */; };
 		A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B6278F35B7000023E4 /* ViewExtension.swift */; };
 		A8D214B9278F3888000023E4 /* RecentsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B8278F3888000023E4 /* RecentsGrid.swift */; };
+		A8D214BF278F8630000023E4 /* SessionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214BE278F8630000023E4 /* SessionSettings.swift */; };
+		A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C1278F8935000023E4 /* SettingsButton.swift */; };
+		A8D214C4278F8B6B000023E4 /* SettingsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */; };
+		A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C5278F8CAA000023E4 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentlyPlacedButton.swift; sourceTree = "<group>"; };
 		A8D214B6278F35B7000023E4 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		A8D214B8278F3888000023E4 /* RecentsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsGrid.swift; sourceTree = "<group>"; };
+		A8D214BE278F8630000023E4 /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
+		A8D214C1278F8935000023E4 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGrid.swift; sourceTree = "<group>"; };
+		A8D214C5278F8CAA000023E4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,7 @@
 				A8615BEA2789BCC4001C0C01 /* ControlViews */,
 				A8CCE1802789DAB1008F3A7B /* BrowseViews */,
 				A89551CC278A1E02004C25E0 /* PlacementViews */,
+				A8D214C0278F8768000023E4 /* SessionSettingsViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +253,7 @@
 				A8C5EC2A2789E0EC00989E55 /* ARModel.swift */,
 				A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */,
 				A89551CA278A18E3004C25E0 /* PlacementSettings.swift */,
+				A8D214BE278F8630000023E4 /* SessionSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +276,16 @@
 				A8D214B6278F35B7000023E4 /* ViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8D214C0278F8768000023E4 /* SessionSettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				A8D214C5278F8CAA000023E4 /* SettingsView.swift */,
+				A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */,
+				A8D214C1278F8935000023E4 /* SettingsButton.swift */,
+			);
+			path = SessionSettingsViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,16 +440,20 @@
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
 				A8871328278CA9FC00244956 /* ARViewContainer.swift in Sources */,
 				A8871326278CA6D100244956 /* CustomARView.swift in Sources */,
+				A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */,
 				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
+				A8D214C4278F8B6B000023E4 /* SettingsGrid.swift in Sources */,
 				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,
 				A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */,
 				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
 				A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */,
+				A8D214BF278F8630000023E4 /* SessionSettings.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
 				A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */,
 				A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
+				A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */,
 				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
