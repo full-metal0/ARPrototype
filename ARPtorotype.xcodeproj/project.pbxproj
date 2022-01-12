@@ -37,6 +37,8 @@
 		A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17C2789C196008F3A7B /* ControlButton.swift */; };
 		A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */; };
 		A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */; };
+		A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */; };
+		A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B6278F35B7000023E4 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		A8CCE17C2789C196008F3A7B /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 		A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGrid.swift; sourceTree = "<group>"; };
+		A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentlyPlacedButton.swift; sourceTree = "<group>"; };
+		A8D214B6278F35B7000023E4 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 				A887131F278C53EE00244956 /* ARPrototypeAP.swift */,
 				A8615BE92789AF0D001C0C01 /* Views */,
 				A8C5EC272789DFC600989E55 /* Models */,
+				A8D214B5278F3576000023E4 /* Extensions */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
 				A8615BD82789ACC5001C0C01 /* 3D Assets */,
 				A84749972787519000419FA1 /* Preview Content */,
@@ -208,6 +213,7 @@
 				A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */,
 				A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */,
 				A8CCE17C2789C196008F3A7B /* ControlButton.swift */,
+				A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */,
 			);
 			path = ControlViews;
 			sourceTree = "<group>";
@@ -249,6 +255,14 @@
 				A8C5EC302789FD6100989E55 /* ItemButton.swift */,
 			);
 			path = BrowseViews;
+			sourceTree = "<group>";
+		};
+		A8D214B5278F3576000023E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8D214B6278F35B7000023E4 /* ViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +423,8 @@
 				A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
+				A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */,
+				A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);

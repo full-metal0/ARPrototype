@@ -26,10 +26,15 @@ class PlacementSettings: ObservableObject {
                 return
             }
             
+            self.recentlyPlaced.append(model)
+            
             print("Setting confirmedModel to \(model.name)")
         }
     }
     
     // Property - container for cancellable objects of SceneEvents.Update subscriber 
     var sceneObserver: Cancellable?
+    
+    // Property stores a record of placed ar models in the scene, the last element is the most recently placed ar model.
+    @Published var recentlyPlaced: [ARModel] = []
 }
