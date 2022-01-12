@@ -14,6 +14,7 @@ struct BrowseView: View { // is used in ControlButtonBar view
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
+                RecentsGrid(showBrowse: $showBrowse)
                 CategoryGrid(showBrowse: $showBrowse)
             }
             .navigationBarTitle(Text("Browse"), displayMode: .large)

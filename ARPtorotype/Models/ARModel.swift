@@ -40,7 +40,7 @@ class ARModel {
                 }
             } receiveValue: { modelEntity in
                 self.modelEntity = modelEntity
-                // check
+                // TODO: check possibility 
                 self.modelEntity?.scale *= self.scaleCompensation
                 print("Entity was loaded")
             }

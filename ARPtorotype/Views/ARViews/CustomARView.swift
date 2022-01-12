@@ -11,6 +11,7 @@ import FocusEntity
 
 class CustomARView: ARView {
     
+    // TODO: rewrite FocusEntity to native
     var focusEntity: FocusEntity?
     
     required init(frame frameRect: CGRect) {

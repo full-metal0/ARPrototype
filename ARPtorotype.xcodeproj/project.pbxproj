@@ -39,6 +39,7 @@
 		A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */; };
 		A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */; };
 		A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B6278F35B7000023E4 /* ViewExtension.swift */; };
+		A8D214B9278F3888000023E4 /* RecentsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214B8278F3888000023E4 /* RecentsGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalGrid.swift; sourceTree = "<group>"; };
 		A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentlyPlacedButton.swift; sourceTree = "<group>"; };
 		A8D214B6278F35B7000023E4 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		A8D214B8278F3888000023E4 /* RecentsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 				A8CCE17E2789D4E8008F3A7B /* BrowseView.swift */,
 				A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */,
 				A8CCE1812789DAE8008F3A7B /* HorizontalGrid.swift */,
+				A8D214B8278F3888000023E4 /* RecentsGrid.swift */,
 				A8C5EC302789FD6100989E55 /* ItemButton.swift */,
 			);
 			path = BrowseViews;
@@ -410,6 +413,7 @@
 			files = (
 				A84749922787518B00419FA1 /* ContentView.swift in Sources */,
 				A8C5EC2F2789E61D00989E55 /* CategoryGrid.swift in Sources */,
+				A8D214B9278F3888000023E4 /* RecentsGrid.swift in Sources */,
 				A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */,
 				A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */,
 				A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */,
