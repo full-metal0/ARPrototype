@@ -18,9 +18,9 @@ struct SettingsGrid: View {
                 
                 SettingsButton(settings: .objectOcclusion, isOn: $sessionSettings.isObjectOcclusionEnabled)
                 
-                SettingsButton(settings: .peopleOcclusion, isOn: $sessionSettings.isMultiUserEnabled)
+                SettingsButton(settings: .multiUser, isOn: $sessionSettings.isMultiUserEnabled)
                 
-                SettingsButton(settings: .peopleOcclusion, isOn: $sessionSettings.isLidarEnabled)
+                SettingsButton(settings: .lidar, isOn: $sessionSettings.isLidarEnabled)
             }
         }
         .padding(.top, 35)
