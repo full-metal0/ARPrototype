@@ -24,13 +24,6 @@
 		A857C6602790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */; };
 		A857C6612790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */; };
 		A857C6622790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */; };
-		A8615BDE2789AD13001C0C01 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BD92789AD11001C0C01 /* fender_stratocaster.usdz */; };
-		A8615BDF2789AD13001C0C01 /* chair_black.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDA2789AD11001C0C01 /* chair_black.usdz */; };
-		A8615BE02789AD13001C0C01 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDB2789AD12001C0C01 /* chair_swan.usdz */; };
-		A8615BE12789AD13001C0C01 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDC2789AD12001C0C01 /* cup_saucer_set.usdz */; };
-		A8615BE22789AD13001C0C01 /* amogus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BDD2789AD13001C0C01 /* amogus.usdz */; };
-		A8615BE52789AD26001C0C01 /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BE32789AD24001C0C01 /* toy_car.usdz */; };
-		A8615BE62789AD26001C0C01 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A8615BE42789AD26001C0C01 /* toy_robot_vintage.usdz */; };
 		A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BE72789AF06001C0C01 /* ControlView.swift */; };
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
@@ -42,7 +35,6 @@
 		A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CD278A1E25004C25E0 /* PlacementButton.swift */; };
 		A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89551CF278A1EBE004C25E0 /* PlacementView.swift */; };
 		A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2A2789E0EC00989E55 /* ARModel.swift */; };
-		A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */; };
 		A8C5EC2F2789E61D00989E55 /* CategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */; };
 		A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C5EC302789FD6100989E55 /* ItemButton.swift */; };
 		A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CCE17C2789C196008F3A7B /* ControlButton.swift */; };
@@ -87,13 +79,6 @@
 		A84749AE2787519000419FA1 /* ARPtorotypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPtorotypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A857C65B2790985200A6B5CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelsViewModel.swift; sourceTree = "<group>"; };
-		A8615BD92789AD11001C0C01 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
-		A8615BDA2789AD11001C0C01 /* chair_black.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_black.usdz; sourceTree = "<group>"; };
-		A8615BDB2789AD12001C0C01 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
-		A8615BDC2789AD12001C0C01 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
-		A8615BDD2789AD13001C0C01 /* amogus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = amogus.usdz; sourceTree = "<group>"; };
-		A8615BE32789AD24001C0C01 /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
-		A8615BE42789AD26001C0C01 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
 		A8615BE72789AF06001C0C01 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
@@ -104,7 +89,6 @@
 		A89551CD278A1E25004C25E0 /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
 		A89551CF278A1EBE004C25E0 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		A8C5EC2A2789E0EC00989E55 /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
-		A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelStore.swift; sourceTree = "<group>"; };
 		A8C5EC2E2789E61D00989E55 /* CategoryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGrid.swift; sourceTree = "<group>"; };
 		A8C5EC302789FD6100989E55 /* ItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemButton.swift; sourceTree = "<group>"; };
 		A8CCE17C2789C196008F3A7B /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
@@ -182,7 +166,6 @@
 				A8D214B5278F3576000023E4 /* Extensions */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
 				A857C65B2790985200A6B5CC /* GoogleService-Info.plist */,
-				A8615BD82789ACC5001C0C01 /* 3D Assets */,
 				A84749972787519000419FA1 /* Preview Content */,
 			);
 			path = ARPtorotype;
@@ -221,20 +204,6 @@
 				A8D214BE278F8630000023E4 /* SessionSettings.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		A8615BD82789ACC5001C0C01 /* 3D Assets */ = {
-			isa = PBXGroup;
-			children = (
-				A8615BE32789AD24001C0C01 /* toy_car.usdz */,
-				A8615BE42789AD26001C0C01 /* toy_robot_vintage.usdz */,
-				A8615BDD2789AD13001C0C01 /* amogus.usdz */,
-				A8615BDA2789AD11001C0C01 /* chair_black.usdz */,
-				A8615BDB2789AD12001C0C01 /* chair_swan.usdz */,
-				A8615BDC2789AD12001C0C01 /* cup_saucer_set.usdz */,
-				A8615BD92789AD11001C0C01 /* fender_stratocaster.usdz */,
-			);
-			path = "3D Assets";
 			sourceTree = "<group>";
 		};
 		A8615BE92789AF0D001C0C01 /* Views */ = {
@@ -284,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				A8C5EC2A2789E0EC00989E55 /* ARModel.swift */,
-				A8C5EC2C2789E3E700989E55 /* ARModelStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,15 +412,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */,
-				A8615BE52789AD26001C0C01 /* toy_car.usdz in Resources */,
-				A8615BE62789AD26001C0C01 /* toy_robot_vintage.usdz in Resources */,
 				A84749962787519000419FA1 /* Assets.xcassets in Resources */,
-				A8615BE22789AD13001C0C01 /* amogus.usdz in Resources */,
-				A8615BE12789AD13001C0C01 /* cup_saucer_set.usdz in Resources */,
-				A8615BDE2789AD13001C0C01 /* fender_stratocaster.usdz in Resources */,
 				A857C65C2790985200A6B5CC /* GoogleService-Info.plist in Resources */,
-				A8615BE02789AD13001C0C01 /* chair_swan.usdz in Resources */,
-				A8615BDF2789AD13001C0C01 /* chair_black.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +451,6 @@
 				A8871326278CA6D100244956 /* CustomARView.swift in Sources */,
 				A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */,
 				A8ED100B2790AA2B00802CBF /* FirebaseStorageHelper.swift in Sources */,
-				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
 				A8D214C4278F8B6B000023E4 /* SettingsGrid.swift in Sources */,
 				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,
 				A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */,
