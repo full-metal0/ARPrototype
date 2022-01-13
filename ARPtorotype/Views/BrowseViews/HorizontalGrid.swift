@@ -28,7 +28,7 @@ struct HorizontalGrid: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<items.count) { index in
+                    ForEach(0..<items.count, id: \.self) { index in
                         let model = items[index]
                         
                         ItemButton(model: model) {

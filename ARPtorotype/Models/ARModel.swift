@@ -9,10 +9,11 @@ import SwiftUI
 import RealityKit
 import Combine
 
-class ARModel {
+class ARModel: Identifiable {
     
     private var cancellable: AnyCancellable?
     
+    var id: String = UUID().uuidString
     var name: String
     var category: ARModelCategory
     var thumbnail: UIImage
@@ -45,5 +46,22 @@ class ARModel {
                 print("Entity was loaded")
             }
         
+    }
+}
+
+enum ARModelCategory: String, CaseIterable {
+    case chair
+    case decor
+    case statuette
+    
+    var label: String {
+        switch self {
+        case .chair:
+            return "Chairs"
+        case .decor:
+            return "Decor"
+        case .statuette:
+            return "Statuettes"
+        }
     }
 }

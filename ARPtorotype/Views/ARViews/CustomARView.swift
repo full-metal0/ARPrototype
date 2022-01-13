@@ -17,8 +17,8 @@ class CustomARView: ARView {
     var focusEntity: FocusEntity?
     var sessionSettings: SessionSettings
     
-    // TODO: refactor anyCancellable properties into one array
-    // settings feature properties
+    // TODO: refactor anyCancellable properties into one set
+    // settings feature's cancel properties
     private var peopleOcclusionCancellable: AnyCancellable?
     private var objectOcclusionCancellable: AnyCancellable?
     private var multiUserCancellable: AnyCancellable?
@@ -38,7 +38,6 @@ class CustomARView: ARView {
         self.setapSubscribers()
     }
     
-    // TODO: handling and exception
     required init(frame frameRect: CGRect) {
         fatalError("init(frame:) has not been implemented")
     }
@@ -60,7 +59,6 @@ class CustomARView: ARView {
     }
     
     private func setapSubscribers() {
-        // TODO: research construction
         self.peopleOcclusionCancellable = self.sessionSettings.$isPeopleOcclusionEnabled.sink(receiveValue: { [weak self] isEnabled in
             self?.updatePeopleOcclusion(isEnabled: isEnabled)
         })
@@ -100,6 +98,7 @@ class CustomARView: ARView {
         self.session.run(config)
     }
     
+    // TODO: Fix
     private func updateObjectOcclusion(isEnabled: Bool) {
         print("\(#file): isObjectOcclusionEnabled is now \(isEnabled)")
         

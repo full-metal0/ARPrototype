@@ -10,15 +10,18 @@ import SwiftUI
 struct CategoryGrid: View {
     
     @Binding var showBrowse: Bool
-    let models = ARModelStore()
+    @ObservedObject private var viewModel = ARModelsViewModel()
     
     var body: some View {
         VStack {
             ForEach(ARModelCategory.allCases, id: \.self) { category in
-                if let modelsByCategory = models.get(category: category) {
+                if let modelsByCategory = viewModel.arModels.filter({ $0.category == category }) {
                     HorizontalGrid(showBrowse: $showBrowse, title: category.label, items: modelsByCategory)
                 }
             }
+        }
+        .onAppear() {
+            self.viewModel.fetchData()
         }
     }
 }
