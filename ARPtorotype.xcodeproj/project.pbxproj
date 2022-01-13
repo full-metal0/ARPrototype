@@ -55,6 +55,7 @@
 		A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C1278F8935000023E4 /* SettingsButton.swift */; };
 		A8D214C4278F8B6B000023E4 /* SettingsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */; };
 		A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C5278F8CAA000023E4 /* SettingsView.swift */; };
+		A8ED100B2790AA2B00802CBF /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ED100A2790AA2B00802CBF /* FirebaseStorageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		A8D214C1278F8935000023E4 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGrid.swift; sourceTree = "<group>"; };
 		A8D214C5278F8CAA000023E4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A8ED100A2790AA2B00802CBF /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				A8615BE92789AF0D001C0C01 /* Views */,
 				A857C64F2790771D00A6B5CC /* ViewModels */,
 				A8C5EC272789DFC600989E55 /* Models */,
+				A8ED10092790A9D000802CBF /* Helpers */,
 				A8D214B5278F3576000023E4 /* Extensions */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
 				A857C65B2790985200A6B5CC /* GoogleService-Info.plist */,
@@ -314,6 +317,14 @@
 				A8D214C1278F8935000023E4 /* SettingsButton.swift */,
 			);
 			path = SessionSettingsViews;
+			sourceTree = "<group>";
+		};
+		A8ED10092790A9D000802CBF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8ED100A2790AA2B00802CBF /* FirebaseStorageHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +489,7 @@
 				A8871328278CA9FC00244956 /* ARViewContainer.swift in Sources */,
 				A8871326278CA6D100244956 /* CustomARView.swift in Sources */,
 				A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */,
+				A8ED100B2790AA2B00802CBF /* FirebaseStorageHelper.swift in Sources */,
 				A8C5EC2D2789E3E700989E55 /* ARModelStore.swift in Sources */,
 				A8D214C4278F8B6B000023E4 /* SettingsGrid.swift in Sources */,
 				A8C5EC312789FD6100989E55 /* ItemButton.swift in Sources */,

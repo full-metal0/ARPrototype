@@ -9,14 +9,14 @@ import SwiftUI
 import RealityKit
 import Combine
 
-class ARModel: Identifiable {
+class ARModel: ObservableObject, Identifiable {
     
     private var cancellable: AnyCancellable?
     
     var id: String = UUID().uuidString
     var name: String
     var category: ARModelCategory
-    var thumbnail: UIImage
+    @Published var thumbnail: UIImage
     var modelEntity: ModelEntity?
     var scaleCompensation: Float
     
@@ -24,27 +24,37 @@ class ARModel: Identifiable {
         self.name = name
         self.category = category
         self.scaleCompensation = scaleCompensation
-        self.thumbnail = UIImage(named: name) ?? UIImage(systemName: "photo")!
+        // TODO: create a load circle
+        self.thumbnail = UIImage(systemName: "photo")!
+        
+        FirebaseStorageHelper.asyncDownloadToFileSystem(relativePath: "thumbnails/\(self.name).png") { fileUrl in
+            do {
+                let imageData = try Data(contentsOf: fileUrl)
+                self.thumbnail = UIImage(data: imageData) ?? self.thumbnail
+            } catch {
+                print("Error loading image: \(error.localizedDescription)")
+            }
+        }
     }
     
     func asyncLoadARModelEntity() {
-        let fileName = self.name + ".usdz"
-        
-        cancellable = ModelEntity.loadModelAsync(named: fileName)
-            .sink { loadCompletion in
-                
-                switch loadCompletion {
-                case .failure(let error):
-                    print("Load error occured for \(fileName) - Error: \(error.localizedDescription)")
-                case .finished:
-                    break
+        FirebaseStorageHelper.asyncDownloadToFileSystem(relativePath: "armodels/\(self.name).usdz") { fileUrl in
+            self.cancellable = ModelEntity.loadModelAsync(contentsOf: fileUrl)
+                .sink { loadCompletion in
+                    
+                    switch loadCompletion {
+                    case .failure(let error):
+                        print("Load error occured for \(self.name) - Error: \(error.localizedDescription)")
+                    case .finished:
+                        break
+                    }
+                } receiveValue: { modelEntity in
+                    self.modelEntity = modelEntity
+                    // TODO: check possibility
+                    self.modelEntity?.scale *= self.scaleCompensation
+                    print("Entity was loaded")
                 }
-            } receiveValue: { modelEntity in
-                self.modelEntity = modelEntity
-                // TODO: check possibility 
-                self.modelEntity?.scale *= self.scaleCompensation
-                print("Entity was loaded")
-            }
+        }
         
     }
 }

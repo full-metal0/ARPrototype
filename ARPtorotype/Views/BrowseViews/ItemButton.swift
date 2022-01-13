@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ItemButton: View {
-    
-    let model: ARModel
+    @ObservedObject var model: ARModel
     let action: () -> Void
     
     var body: some View {
