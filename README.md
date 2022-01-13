@@ -1,2 +1,2 @@
 # ARPrototype
-SwiftUI, ARKit, RealityKit, Combine 
+SwiftUI, ARKit, RealityKit, Combine, Firebase 
