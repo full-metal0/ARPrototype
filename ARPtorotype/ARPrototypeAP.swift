@@ -12,6 +12,7 @@ import Firebase
 struct ARPrototypeAP: App {
     @StateObject var placementSettings = PlacementSettings()
     @StateObject var sessionSettings = SessionSettings()
+    @StateObject var sceneManager = SceneManager()
     
     init() {
         FirebaseApp.configure()
@@ -33,6 +34,7 @@ struct ARPrototypeAP: App {
             ContentView()
                 .environmentObject(placementSettings)
                 .environmentObject(sessionSettings)
+                .environmentObject(sceneManager)
         }
     }
 }

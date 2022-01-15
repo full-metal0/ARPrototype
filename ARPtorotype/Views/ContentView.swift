@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import RealityKit
 
 struct ContentView : View {
     @EnvironmentObject var placementSettings: PlacementSettings

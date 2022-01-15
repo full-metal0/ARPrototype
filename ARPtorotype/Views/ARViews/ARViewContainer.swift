@@ -11,6 +11,7 @@ import SwiftUI
 struct ARViewContainer: UIViewRepresentable {
     @EnvironmentObject var placementSettings: PlacementSettings
     @EnvironmentObject var sessionSettings: SessionSettings
+    @EnvironmentObject var sceneManager: SceneManager
     
     func makeUIView(context: Context) -> CustomARView {
         
@@ -19,6 +20,7 @@ struct ARViewContainer: UIViewRepresentable {
         placementSettings.sceneObserver = arView.scene
             .subscribe(to: SceneEvents.Update.self, { (event) in
                 updateScene(for: arView)
+                updatePersistenceAvailability(for: arView)
             })
         
         return arView
@@ -54,6 +56,25 @@ struct ARViewContainer: UIViewRepresentable {
         anchorEntity.addChild(cloneEntity)
         
         arView.scene.addAnchor(anchorEntity)
+        
+        sceneManager.anchorEntities.append(anchorEntity)
+        
         print("Model is added")
+    }
+}
+
+extension ARViewContainer {
+    private func updatePersistenceAvailability(for arView: ARView) {
+        guard let currentFrame = arView.session.currentFrame else {
+            print("ARFrame is not available")
+            return
+        }
+        
+        switch currentFrame.worldMappingStatus {
+        case .mapped, .extending:
+            sceneManager.isPersistenceAvailable = !sceneManager.anchorEntities.isEmpty
+        default:
+            sceneManager.isPersistenceAvailable = false
+        }
     }
 }

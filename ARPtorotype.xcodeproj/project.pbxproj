@@ -18,15 +18,13 @@
 		A857C656279097A500A6B5CC /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A857C655279097A500A6B5CC /* FirebaseFirestoreSwift-Beta */; };
 		A857C658279097A500A6B5CC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A857C657279097A500A6B5CC /* FirebaseStorage */; };
 		A857C65A279097A500A6B5CC /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A857C659279097A500A6B5CC /* FirebaseStorageSwift-Beta */; };
-		A857C65C2790985200A6B5CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857C65B2790985200A6B5CC /* GoogleService-Info.plist */; };
-		A857C65D2790985200A6B5CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857C65B2790985200A6B5CC /* GoogleService-Info.plist */; };
-		A857C65E2790985200A6B5CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857C65B2790985200A6B5CC /* GoogleService-Info.plist */; };
 		A857C6602790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */; };
 		A857C6612790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */; };
 		A857C6622790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */; };
 		A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BE72789AF06001C0C01 /* ControlView.swift */; };
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
+		A880F4A827932D9D006409DB /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4A727932D9D006409DB /* SceneManager.swift */; };
 		A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887131F278C53EE00244956 /* ARPrototypeAP.swift */; };
 		A8871323278CA54600244956 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = A8871322278CA54600244956 /* FocusEntity */; };
 		A8871326278CA6D100244956 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8871325278CA6D100244956 /* CustomARView.swift */; };
@@ -47,6 +45,9 @@
 		A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C1278F8935000023E4 /* SettingsButton.swift */; };
 		A8D214C4278F8B6B000023E4 /* SettingsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */; };
 		A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D214C5278F8CAA000023E4 /* SettingsView.swift */; };
+		A8E199492790CBAC00E39AD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8E199482790CBAC00E39AD1 /* GoogleService-Info.plist */; };
+		A8E1994A2790CBAC00E39AD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8E199482790CBAC00E39AD1 /* GoogleService-Info.plist */; };
+		A8E1994B2790CBAC00E39AD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A8E199482790CBAC00E39AD1 /* GoogleService-Info.plist */; };
 		A8ED100B2790AA2B00802CBF /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ED100A2790AA2B00802CBF /* FirebaseStorageHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,11 +78,11 @@
 		A84749A82787519000419FA1 /* ARPtorotypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPtorotypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84749AC2787519000419FA1 /* ARPtorotypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPtorotypeUITests.swift; sourceTree = "<group>"; };
 		A84749AE2787519000419FA1 /* ARPtorotypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPtorotypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A857C65B2790985200A6B5CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelsViewModel.swift; sourceTree = "<group>"; };
 		A8615BE72789AF06001C0C01 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
+		A880F4A727932D9D006409DB /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		A887131F278C53EE00244956 /* ARPrototypeAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPrototypeAP.swift; sourceTree = "<group>"; };
 		A8871325278CA6D100244956 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		A8871327278CA9FC00244956 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		A8D214C1278F8935000023E4 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		A8D214C3278F8B6B000023E4 /* SettingsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGrid.swift; sourceTree = "<group>"; };
 		A8D214C5278F8CAA000023E4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A8E199482790CBAC00E39AD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A8ED100A2790AA2B00802CBF /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -165,7 +167,7 @@
 				A8ED10092790A9D000802CBF /* Helpers */,
 				A8D214B5278F3576000023E4 /* Extensions */,
 				A84749952787519000419FA1 /* Assets.xcassets */,
-				A857C65B2790985200A6B5CC /* GoogleService-Info.plist */,
+				A8E199482790CBAC00E39AD1 /* GoogleService-Info.plist */,
 				A84749972787519000419FA1 /* Preview Content */,
 			);
 			path = ARPtorotype;
@@ -202,6 +204,7 @@
 				A857C65F2790A0D000A6B5CC /* ARModelsViewModel.swift */,
 				A89551CA278A18E3004C25E0 /* PlacementSettings.swift */,
 				A8D214BE278F8630000023E4 /* SessionSettings.swift */,
+				A880F4A727932D9D006409DB /* SceneManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -413,7 +416,7 @@
 			files = (
 				A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */,
 				A84749962787519000419FA1 /* Assets.xcassets in Resources */,
-				A857C65C2790985200A6B5CC /* GoogleService-Info.plist in Resources */,
+				A8E199492790CBAC00E39AD1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A857C65D2790985200A6B5CC /* GoogleService-Info.plist in Resources */,
+				A8E1994A2790CBAC00E39AD1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A857C65E2790985200A6B5CC /* GoogleService-Info.plist in Resources */,
+				A8E1994B2790CBAC00E39AD1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +467,7 @@
 				A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 				A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */,
+				A880F4A827932D9D006409DB /* SceneManager.swift in Sources */,
 				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
