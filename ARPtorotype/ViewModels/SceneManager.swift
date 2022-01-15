@@ -9,9 +9,12 @@ import SwiftUI
 import RealityKit
 
 class SceneManager: ObservableObject {
-    @Published var isPersistenceAvailable: Bool = false
+    @Published var isPersistenceAvailable = false
     // Property keeps track of anchorEntities in the scene
     @Published var anchorEntities: [AnchorEntity] = []
+    
+    var shouldSaveSceneToFilesystem = false
+    var shouldLoadSceneFromFilesystem = false
     
     // TODO: Research lazy ver implementation
     lazy var persistenceUrl: URL = {

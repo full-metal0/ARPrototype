@@ -12,14 +12,14 @@ struct SceneBar: View {
     
     var body: some View {
         ControlButton(systemIcon: "icloud.and.arrow.up") {
-            
+            sceneManager.shouldSaveSceneToFilesystem = true
         }
         .hide(!self.sceneManager.isPersistenceAvailable)
         
         Spacer()
         
         ControlButton(systemIcon: "icloud.and.arrow.down") {
-            
+            sceneManager.shouldLoadSceneFromFilesystem = true
         }
         .hide(self.sceneManager.scenePersistenceData == nil)
         
