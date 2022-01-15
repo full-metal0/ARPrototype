@@ -25,6 +25,10 @@
 		A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */; };
 		A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */; };
 		A880F4A827932D9D006409DB /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4A727932D9D006409DB /* SceneManager.swift */; };
+		A880F4AA279332C1006409DB /* ControlModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4A9279332C1006409DB /* ControlModePicker.swift */; };
+		A880F4AC27933C08006409DB /* BrowseBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4AB27933C08006409DB /* BrowseBar.swift */; };
+		A880F4AE27933C2A006409DB /* SceneBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4AD27933C2A006409DB /* SceneBar.swift */; };
+		A880F4B0279342A4006409DB /* ScenePersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4AF279342A4006409DB /* ScenePersistenceHelper.swift */; };
 		A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887131F278C53EE00244956 /* ARPrototypeAP.swift */; };
 		A8871323278CA54600244956 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = A8871322278CA54600244956 /* FocusEntity */; };
 		A8871326278CA6D100244956 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8871325278CA6D100244956 /* CustomARView.swift */; };
@@ -83,6 +87,10 @@
 		A8615BEB2789BD11001C0C01 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
 		A880F4A727932D9D006409DB /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		A880F4A9279332C1006409DB /* ControlModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlModePicker.swift; sourceTree = "<group>"; };
+		A880F4AB27933C08006409DB /* BrowseBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBar.swift; sourceTree = "<group>"; };
+		A880F4AD27933C2A006409DB /* SceneBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBar.swift; sourceTree = "<group>"; };
+		A880F4AF279342A4006409DB /* ScenePersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePersistenceHelper.swift; sourceTree = "<group>"; };
 		A887131F278C53EE00244956 /* ARPrototypeAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPrototypeAP.swift; sourceTree = "<group>"; };
 		A8871325278CA6D100244956 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		A8871327278CA9FC00244956 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
@@ -230,6 +238,9 @@
 				A8615BED2789BD22001C0C01 /* ControlButtonBar.swift */,
 				A8CCE17C2789C196008F3A7B /* ControlButton.swift */,
 				A8D214B3278F30E8000023E4 /* MostRecentlyPlacedButton.swift */,
+				A880F4A9279332C1006409DB /* ControlModePicker.swift */,
+				A880F4AB27933C08006409DB /* BrowseBar.swift */,
+				A880F4AD27933C2A006409DB /* SceneBar.swift */,
 			);
 			path = ControlViews;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				A8ED100A2790AA2B00802CBF /* FirebaseStorageHelper.swift */,
+				A880F4AF279342A4006409DB /* ScenePersistenceHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -449,6 +461,8 @@
 				A8615BEC2789BD11001C0C01 /* ControlVisibilityToggleButton.swift in Sources */,
 				A89551CE278A1E25004C25E0 /* PlacementButton.swift in Sources */,
 				A8CCE17F2789D4E8008F3A7B /* BrowseView.swift in Sources */,
+				A880F4B0279342A4006409DB /* ScenePersistenceHelper.swift in Sources */,
+				A880F4AA279332C1006409DB /* ControlModePicker.swift in Sources */,
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
 				A8871328278CA9FC00244956 /* ARViewContainer.swift in Sources */,
 				A8871326278CA6D100244956 /* CustomARView.swift in Sources */,
@@ -464,9 +478,11 @@
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
 				A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */,
+				A880F4AE27933C2A006409DB /* SceneBar.swift in Sources */,
 				A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 				A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */,
+				A880F4AC27933C08006409DB /* BrowseBar.swift in Sources */,
 				A880F4A827932D9D006409DB /* SceneManager.swift in Sources */,
 				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);

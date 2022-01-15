@@ -8,41 +8,29 @@
 import SwiftUI
 
 struct ControlButtonBar: View {
-    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
     @Binding var showSettings: Bool
+    var selectedControlMode: Int // only reads, so without @Binding
     
     var body: some View {
-        HStack {
-            MostRecentlyPlacedButton().hide(self.placementSettings.recentlyPlaced.isEmpty)
-
-            Spacer()
-            
-            ControlButton(systemIcon: "square.grid.2x2") {
-                self.showBrowse.toggle()
-            }.sheet(isPresented: $showBrowse) {
-                BrowseView(showBrowse: $showBrowse)
+        HStack(alignment: .center) {
+            if selectedControlMode == 1 {
+                SceneBar()
             }
-            
-            Spacer()
-            
-            ControlButton(systemIcon: "slider.horizontal.3") {
-                self.showSettings.toggle()
-            }.sheet(isPresented: $showSettings) {
-                SettingsView(showSettings: $showSettings)
+            else {
+                BrowseBar(showBrowse: $showBrowse, showSettings: $showSettings)
             }
-
         }
-        .frame(maxWidth: 500)
-        .padding(30)
-        .background(.black
-                        .opacity(0.25))
+        .frame(width: 400)
+        .padding(25)
+        .background(.black.opacity(0.25))
     }
+
 }
 
 struct ControlButtonBar_Previews: PreviewProvider {
     static var previews: some View {
-        ControlButtonBar(showBrowse: Binding.constant(false), showSettings: Binding.constant(false))
+        ControlButtonBar(showBrowse: Binding.constant(false), showSettings: Binding.constant(false), selectedControlMode: 0)
             .previewLayout(.sizeThatFits)
     }
 }

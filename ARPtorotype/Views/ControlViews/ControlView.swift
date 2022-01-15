@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ControlView: View {
-    
+    @Binding var selectedControlMode: Int
     @Binding var isControlVisible: Bool
     @Binding var showBrowse: Bool
     @Binding var showSettings: Bool
@@ -20,7 +20,8 @@ struct ControlView: View {
             Spacer()
             
             if isControlVisible {
-                ControlButtonBar(showBrowse: $showBrowse, showSettings: $showSettings)
+                ControlModePicker(selectedControlMode: $selectedControlMode)
+                ControlButtonBar(showBrowse: $showBrowse, showSettings: $showSettings, selectedControlMode: selectedControlMode)
             }
         }
     }
@@ -30,7 +31,13 @@ struct ControlView_Previews: PreviewProvider {
     static var isControlVisible: Bool = true
     
     static var previews: some View {
-        ControlView(isControlVisible: Binding.constant(true), showBrowse: Binding.constant(false), showSettings: Binding.constant(false))
+        ControlView(selectedControlMode: Binding.constant(0), isControlVisible: Binding.constant(true), showBrowse: Binding.constant(false), showSettings: Binding.constant(false))
             .edgesIgnoringSafeArea(.all)
     }
+}
+
+// enum collection
+enum ControlModes: String, CaseIterable {
+    case browse
+    case scene
 }

@@ -13,13 +13,14 @@ struct ContentView : View {
     @State private var isControlVisible: Bool = true
     @State private var showBrowse: Bool = false
     @State private var showSettings: Bool = false
+    @State private var selectedControlMode: Int = 0
     
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer()
             
             if self.placementSettings.selectedModel == nil {
-                ControlView(isControlVisible: $isControlVisible, showBrowse: $showBrowse, showSettings: $showSettings)
+                ControlView(selectedControlMode: $selectedControlMode, isControlVisible: $isControlVisible, showBrowse: $showBrowse, showSettings: $showSettings)
             } else {
                 PlacementView()
             }
