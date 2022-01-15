@@ -64,6 +64,7 @@ struct ARViewContainer: UIViewRepresentable {
     }
 }
 
+// MARK: Persistence
 extension ARViewContainer {
     private func updatePersistenceAvailability(for arView: ARView) {
         guard let currentFrame = arView.session.currentFrame else {
@@ -100,6 +101,5 @@ extension ARViewContainer {
             
             sceneManager.shouldLoadSceneFromFilesystem = false
         }
-        
     }
 }

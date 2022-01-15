@@ -17,6 +17,18 @@ class CustomARView: ARView {
     var focusEntity: FocusEntity?
     var sessionSettings: SessionSettings
     
+    var defaultConfiguration: ARWorldTrackingConfiguration {
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = [.vertical, .horizontal]
+        
+        // check LiDAR
+        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
+            config.sceneReconstruction = .mesh
+        }
+        
+        return config
+    }
+    
     // TODO: refactor anyCancellable properties into one set
     // settings feature's cancel properties
     private var peopleOcclusionCancellable: AnyCancellable?
@@ -43,15 +55,7 @@ class CustomARView: ARView {
     }
     
     private func configure() {
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.vertical, .horizontal]
-        
-        // check LiDAR
-        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-            config.sceneReconstruction = .mesh
-        }
-        
-        session.run(config)
+        session.run(defaultConfiguration)
     }
     
     @MainActor @objc required dynamic init?(coder decoder: NSCoder) {
