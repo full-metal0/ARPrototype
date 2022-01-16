@@ -37,13 +37,14 @@ class ARModel: ObservableObject, Identifiable {
         }
     }
     
-    func asyncLoadARModelEntity() {
+    func asyncLoadARModelEntity(handler: @escaping (_ completed: Bool, _ error: Error?) -> Void) {
         FirebaseStorageHelper.asyncDownloadToFileSystem(relativePath: "armodels/\(self.name).usdz") { fileUrl in
             self.cancellable = ModelEntity.loadModelAsync(contentsOf: fileUrl)
                 .sink { loadCompletion in
                     
                     switch loadCompletion {
                     case .failure(let error):
+                        handler(false, error)
                         print("Load error occured for \(self.name) - Error: \(error.localizedDescription)")
                     case .finished:
                         break
@@ -52,6 +53,9 @@ class ARModel: ObservableObject, Identifiable {
                     self.modelEntity = modelEntity
                     // TODO: check possibility
                     self.modelEntity?.scale *= self.scaleCompensation
+                    
+                    handler(true, nil)
+                    
                     print("Entity was loaded")
                 }
         }

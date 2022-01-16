@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView : View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @EnvironmentObject var sessionSettings: SessionSettings
+    @EnvironmentObject var arModelsViewModel: ARModelsViewModel
     @State private var isControlVisible: Bool = true
     @State private var showBrowse: Bool = false
     @State private var showSettings: Bool = false
@@ -26,6 +27,9 @@ struct ContentView : View {
             }
         }
         .edgesIgnoringSafeArea(.all)
+        .onAppear {
+            arModelsViewModel.fetchData()
+        }
     }
 }
 
@@ -35,6 +39,8 @@ struct ContentView_Previews : PreviewProvider {
         ContentView()
             .environmentObject(PlacementSettings())
             .environmentObject(SessionSettings())
+            .environmentObject(SceneManager())
+            .environmentObject(ARModelsViewModel())
             .preferredColorScheme(.dark)
     }
 }
