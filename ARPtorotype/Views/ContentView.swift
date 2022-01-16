@@ -11,6 +11,7 @@ struct ContentView : View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @EnvironmentObject var sessionSettings: SessionSettings
     @EnvironmentObject var arModelsViewModel: ARModelsViewModel
+    @EnvironmentObject var arModelDeletionManager: ARModelDeletionManager
     @State private var isControlVisible: Bool = true
     @State private var showBrowse: Bool = false
     @State private var showSettings: Bool = false
@@ -20,10 +21,12 @@ struct ContentView : View {
         ZStack(alignment: .bottom) {
             ARViewContainer()
             
-            if self.placementSettings.selectedModel == nil {
-                ControlView(selectedControlMode: $selectedControlMode, isControlVisible: $isControlVisible, showBrowse: $showBrowse, showSettings: $showSettings)
-            } else {
+            if placementSettings.selectedModel != nil {
                 PlacementView()
+            } else if arModelDeletionManager.entitySelectedFromDeletion != nil {
+                DeletionView()
+            } else {
+                ControlView(selectedControlMode: $selectedControlMode, isControlVisible: $isControlVisible, showBrowse: $showBrowse, showSettings: $showSettings)
             }
         }
         .edgesIgnoringSafeArea(.all)
