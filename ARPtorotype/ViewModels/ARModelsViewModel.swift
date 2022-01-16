@@ -32,4 +32,10 @@ class ARModelsViewModel: ObservableObject {
             }
         }
     }
+    
+    func clearARModelEntitiesFromMemory() {
+        for model in arModels {
+            model.modelEntity = nil
+        }
+    }
 }

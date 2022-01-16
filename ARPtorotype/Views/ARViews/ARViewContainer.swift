@@ -45,9 +45,9 @@ struct ARViewContainer: UIViewRepresentable {
             if let anchor = arModelAnchor.anchor {
                 setToPlace(modelEntity, for: anchor, in: arView)
                 
-                arView.session.add(anchor: anchor)
+                //arView.session.add(anchor: anchor)
                 
-                placementSettings.recentlyPlaced.append(arModelAnchor.model)
+                //placementSettings.recentlyPlaced.append(arModelAnchor.model)
             } else if let transform = getTransformForPlacement(in: arView) {
                 let anchorName = anchorNamePrefix + arModelAnchor.model.name
                 let anchor = ARAnchor(name: anchorName, transform: transform)
@@ -122,19 +122,19 @@ extension ARViewContainer {
             ScenePersistenceHelper.saveScene(for: arView, at: sceneManager.persistenceUrl)
             
             sceneManager.shouldSaveSceneToFilesystem = false
-        }
-        
-        if sceneManager.shouldLoadSceneFromFilesystem {
+        } else if sceneManager.shouldLoadSceneFromFilesystem {
             guard let scenePersistenceData = sceneManager.scenePersistenceData else {
                 print("Unable to retrieve scenePersistenceData")
                 
                 return
             }
             
-            ScenePersistenceHelper.loadScene(for: arView, with: scenePersistenceData)
+            arModelsViewModel.clearARModelEntitiesFromMemory()
             
             // clear anchor entities array
             sceneManager.anchorEntities.removeAll(keepingCapacity: true)
+            
+            ScenePersistenceHelper.loadScene(for: arView, with: scenePersistenceData)
             
             sceneManager.shouldLoadSceneFromFilesystem = false
         }
@@ -163,12 +163,14 @@ extension ARViewContainer {
                         return
                     }
                     
-                    model.asyncLoadARModelEntity { completed, error in
-                        if completed {
-                            let arModelAnchor = ARModelAnchor(model: model, anchor: anchor)
-                            self.parent.placementSettings.arModelsConfirmedForPlacement.append(arModelAnchor)
-                            
-                            print("Adding arModelAnchor - \(modelName)")
+                    if model.modelEntity == nil {
+                        model.asyncLoadARModelEntity { completed, error in
+                            if completed {
+                                let arModelAnchor = ARModelAnchor(model: model, anchor: anchor)
+                                self.parent.placementSettings.arModelsConfirmedForPlacement.append(arModelAnchor)
+                                
+                                print("Adding arModelAnchor - \(modelName)")
+                            }
                         }
                     }
                 }
