@@ -38,13 +38,27 @@ struct ARViewContainer: UIViewRepresentable {
     private func updateScene(for arView: CustomARView) {
         arView.focusEntity?.isEnabled = placementSettings.selectedModel != nil
         
-        if let confirmedModel = placementSettings.confirmedModel,
-            let modelEntity = confirmedModel.modelEntity {
+        if let arModelAnchor = placementSettings.arModelsConfirmedForPlacement.popLast(),
+           let modelEntity = arModelAnchor.model.modelEntity {
             
-            self.setToPlace(modelEntity, in: arView)
-            print("Place")
+            // TODO: Refactor branching implementation
+            if let anchor = arModelAnchor.anchor {
+                setToPlace(modelEntity, for: anchor, in: arView)
+                
+                arView.session.add(anchor: anchor)
+                
+                placementSettings.recentlyPlaced.append(arModelAnchor.model)
+            } else if let transform = getTransformForPlacement(in: arView) {
+                let anchorName = anchorNamePrefix + arModelAnchor.model.name
+                let anchor = ARAnchor(name: anchorName, transform: transform)
+                
+                setToPlace(modelEntity, for: anchor, in: arView)
+                
+                arView.session.add(anchor: anchor)
+                
+                placementSettings.recentlyPlaced.append(arModelAnchor.model)
+            }
             
-            placementSettings.confirmedModel = nil
         }
     }
     
