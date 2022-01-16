@@ -29,6 +29,7 @@
 		A880F4AC27933C08006409DB /* BrowseBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4AB27933C08006409DB /* BrowseBar.swift */; };
 		A880F4AE27933C2A006409DB /* SceneBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4AD27933C2A006409DB /* SceneBar.swift */; };
 		A880F4B0279342A4006409DB /* ScenePersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4AF279342A4006409DB /* ScenePersistenceHelper.swift */; };
+		A880F4B2279430E3006409DB /* ARModelAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880F4B1279430E3006409DB /* ARModelAnchor.swift */; };
 		A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887131F278C53EE00244956 /* ARPrototypeAP.swift */; };
 		A8871323278CA54600244956 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = A8871322278CA54600244956 /* FocusEntity */; };
 		A8871326278CA6D100244956 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8871325278CA6D100244956 /* CustomARView.swift */; };
@@ -91,6 +92,7 @@
 		A880F4AB27933C08006409DB /* BrowseBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBar.swift; sourceTree = "<group>"; };
 		A880F4AD27933C2A006409DB /* SceneBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBar.swift; sourceTree = "<group>"; };
 		A880F4AF279342A4006409DB /* ScenePersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePersistenceHelper.swift; sourceTree = "<group>"; };
+		A880F4B1279430E3006409DB /* ARModelAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelAnchor.swift; sourceTree = "<group>"; };
 		A887131F278C53EE00244956 /* ARPrototypeAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPrototypeAP.swift; sourceTree = "<group>"; };
 		A8871325278CA6D100244956 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		A8871327278CA9FC00244956 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				A8C5EC2A2789E0EC00989E55 /* ARModel.swift */,
+				A880F4B1279430E3006409DB /* ARModelAnchor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				A8871320278C53EE00244956 /* ARPrototypeAP.swift in Sources */,
 				A8CCE17D2789C196008F3A7B /* ControlButton.swift in Sources */,
 				A89551CB278A18E3004C25E0 /* PlacementSettings.swift in Sources */,
+				A880F4B2279430E3006409DB /* ARModelAnchor.swift in Sources */,
 				A857C6602790A0D000A6B5CC /* ARModelsViewModel.swift in Sources */,
 				A8D214BF278F8630000023E4 /* SessionSettings.swift in Sources */,
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
