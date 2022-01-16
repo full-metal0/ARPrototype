@@ -13,26 +13,23 @@ struct BrowseBar: View {
     @Binding var showSettings: Bool
     
     var body: some View {
-        HStack {
-            MostRecentlyPlacedButton().hide(self.placementSettings.recentlyPlaced.isEmpty)
-
-            Spacer()
-            
-            ControlButton(systemIcon: "square.grid.2x2") {
-                self.showBrowse.toggle()
-            }.sheet(isPresented: $showBrowse) {
-                BrowseView(showBrowse: $showBrowse)
-                    .environmentObject(placementSettings)
-            }
-            
-            Spacer()
-            
-            ControlButton(systemIcon: "slider.horizontal.3") {
-                self.showSettings.toggle()
-            }.sheet(isPresented: $showSettings) {
-                SettingsView(showSettings: $showSettings)
-            }
-
+        MostRecentlyPlacedButton().hide(self.placementSettings.recentlyPlaced.isEmpty)
+        
+        Spacer()
+        
+        ControlButton(systemIcon: "square.grid.2x2") {
+            self.showBrowse.toggle()
+        }.sheet(isPresented: $showBrowse) {
+            BrowseView(showBrowse: $showBrowse)
+                .environmentObject(placementSettings)
+        }
+        
+        Spacer()
+        
+        ControlButton(systemIcon: "slider.horizontal.3") {
+            self.showSettings.toggle()
+        }.sheet(isPresented: $showSettings) {
+            SettingsView(showSettings: $showSettings)
         }
     }
 }

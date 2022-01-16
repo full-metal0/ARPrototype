@@ -21,8 +21,8 @@ struct ControlButtonBar: View {
                 BrowseBar(showBrowse: $showBrowse, showSettings: $showSettings)
             }
         }
-        .frame(width: 400)
-        .padding(25)
+        .frame(maxWidth: 500)
+        .padding(30)
         .background(.black.opacity(0.25))
     }
 
