@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RealityKit
 
 struct SceneBar: View {
     @EnvironmentObject var sceneManager: SceneManager
@@ -26,7 +27,9 @@ struct SceneBar: View {
         Spacer()
         
         ControlButton(systemIcon: "trash") {
-            
+            for anchorEntity in sceneManager.anchorEntities {
+                anchorEntity.removeFromParent()
+            }
         }
     }
 }
