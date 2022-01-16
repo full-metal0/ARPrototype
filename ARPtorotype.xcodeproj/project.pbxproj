@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A801EAE22794A383002543BB /* ARModelDeletionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801EAE12794A383002543BB /* ARModelDeletionManager.swift */; };
 		A84749922787518B00419FA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749912787518B00419FA1 /* ContentView.swift */; };
 		A84749962787519000419FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749952787519000419FA1 /* Assets.xcassets */; };
 		A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749982787519000419FA1 /* Preview Assets.xcassets */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A801EAE12794A383002543BB /* ARModelDeletionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelDeletionManager.swift; sourceTree = "<group>"; };
 		A847498C2787518B00419FA1 /* ARPtorotype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPtorotype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84749912787518B00419FA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A84749952787519000419FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				A89551CA278A18E3004C25E0 /* PlacementSettings.swift */,
 				A8D214BE278F8630000023E4 /* SessionSettings.swift */,
 				A880F4A727932D9D006409DB /* SceneManager.swift */,
+				A801EAE12794A383002543BB /* ARModelDeletionManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				A880F4AA279332C1006409DB /* ControlModePicker.swift in Sources */,
 				A8615BEE2789BD22001C0C01 /* ControlButtonBar.swift in Sources */,
 				A8871328278CA9FC00244956 /* ARViewContainer.swift in Sources */,
+				A801EAE22794A383002543BB /* ARModelDeletionManager.swift in Sources */,
 				A8871326278CA6D100244956 /* CustomARView.swift in Sources */,
 				A8D214C6278F8CAA000023E4 /* SettingsView.swift in Sources */,
 				A8ED100B2790AA2B00802CBF /* FirebaseStorageHelper.swift in Sources */,

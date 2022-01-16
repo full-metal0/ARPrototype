@@ -14,6 +14,7 @@ struct ARPrototypeAP: App {
     @StateObject var sessionSettings = SessionSettings()
     @StateObject var sceneManager = SceneManager()
     @StateObject var arModelsViewModel = ARModelsViewModel()
+    @StateObject var arModelDeletionManager = ARModelDeletionManager()
     
     init() {
         FirebaseApp.configure()
@@ -37,6 +38,7 @@ struct ARPrototypeAP: App {
                 .environmentObject(sessionSettings)
                 .environmentObject(sceneManager)
                 .environmentObject(arModelsViewModel)
+                .environmentObject(arModelDeletionManager)
         }
     }
 }
