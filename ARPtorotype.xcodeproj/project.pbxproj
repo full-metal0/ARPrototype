@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A801EAE22794A383002543BB /* ARModelDeletionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801EAE12794A383002543BB /* ARModelDeletionManager.swift */; };
+		A801EAE42794AB08002543BB /* DeletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801EAE32794AB08002543BB /* DeletionView.swift */; };
+		A801EAE72794ABA0002543BB /* DeletionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801EAE62794ABA0002543BB /* DeletionButton.swift */; };
 		A84749922787518B00419FA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84749912787518B00419FA1 /* ContentView.swift */; };
 		A84749962787519000419FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749952787519000419FA1 /* Assets.xcassets */; };
 		A84749992787519000419FA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84749982787519000419FA1 /* Preview Assets.xcassets */; };
@@ -76,6 +78,8 @@
 
 /* Begin PBXFileReference section */
 		A801EAE12794A383002543BB /* ARModelDeletionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModelDeletionManager.swift; sourceTree = "<group>"; };
+		A801EAE32794AB08002543BB /* DeletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionView.swift; sourceTree = "<group>"; };
+		A801EAE62794ABA0002543BB /* DeletionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionButton.swift; sourceTree = "<group>"; };
 		A847498C2787518B00419FA1 /* ARPtorotype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPtorotype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84749912787518B00419FA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A84749952787519000419FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A801EAE52794AB39002543BB /* DeletionViews */ = {
+			isa = PBXGroup;
+			children = (
+				A801EAE32794AB08002543BB /* DeletionView.swift */,
+				A801EAE62794ABA0002543BB /* DeletionButton.swift */,
+			);
+			path = DeletionViews;
+			sourceTree = "<group>";
+		};
 		A84749832787518B00419FA1 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +244,7 @@
 				A8CCE1802789DAB1008F3A7B /* BrowseViews */,
 				A89551CC278A1E02004C25E0 /* PlacementViews */,
 				A8D214C0278F8768000023E4 /* SessionSettingsViews */,
+				A801EAE52794AB39002543BB /* DeletionViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -486,11 +500,13 @@
 				A8615BE82789AF06001C0C01 /* ControlView.swift in Sources */,
 				A8C5EC2B2789E0EC00989E55 /* ARModel.swift in Sources */,
 				A8D214B7278F35B7000023E4 /* ViewExtension.swift in Sources */,
+				A801EAE72794ABA0002543BB /* DeletionButton.swift in Sources */,
 				A880F4AE27933C2A006409DB /* SceneBar.swift in Sources */,
 				A8D214B4278F30E8000023E4 /* MostRecentlyPlacedButton.swift in Sources */,
 				A8CCE1822789DAE8008F3A7B /* HorizontalGrid.swift in Sources */,
 				A8D214C2278F8935000023E4 /* SettingsButton.swift in Sources */,
 				A880F4AC27933C08006409DB /* BrowseBar.swift in Sources */,
+				A801EAE42794AB08002543BB /* DeletionView.swift in Sources */,
 				A880F4A827932D9D006409DB /* SceneManager.swift in Sources */,
 				A89551D0278A1EBE004C25E0 /* PlacementView.swift in Sources */,
 			);
