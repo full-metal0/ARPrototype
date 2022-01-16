@@ -16,6 +16,7 @@ class CustomARView: ARView {
     // TODO: rewrite FocusEntity to native
     var focusEntity: FocusEntity?
     var sessionSettings: SessionSettings
+    var arModelDeletionManager: ARModelDeletionManager
     
     var defaultConfiguration: ARWorldTrackingConfiguration {
         let config = ARWorldTrackingConfiguration()
@@ -36,8 +37,9 @@ class CustomARView: ARView {
     private var multiUserCancellable: AnyCancellable?
     private var lidarCancellable: AnyCancellable?
     
-    required init(frame frameRect: CGRect, sessionSettings: SessionSettings) {
+    required init(frame frameRect: CGRect, sessionSettings: SessionSettings, arModelDeletionManager: ARModelDeletionManager) {
         self.sessionSettings = sessionSettings
+        self.arModelDeletionManager = arModelDeletionManager
         
         super.init(frame: frameRect)
         
@@ -45,9 +47,11 @@ class CustomARView: ARView {
         
         configure()
         
-        self.initializeSettings()
+        initializeSettings()
         
-        self.setapSubscribers()
+        setapSubscribers()
+        
+        enableObjectDeletion()
     }
     
     required init(frame frameRect: CGRect) {
@@ -132,5 +136,21 @@ class CustomARView: ARView {
         self.updateObjectOcclusion(isEnabled: sessionSettings.isObjectOcclusionEnabled)
         self.updateMultiUser(isEnabled: sessionSettings.isMultiUserEnabled)
         self.updateLidar(isEnabled: sessionSettings.isLidarEnabled)
+    }
+}
+
+// MARK: - Object Deletion
+extension CustomARView {
+    func enableObjectDeletion() {
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(recognizer:)))
+        addGestureRecognizer(longPressGesture)
+    }
+    
+    @objc func handleLongPress(recognizer: UILongPressGestureRecognizer) {
+        let location = recognizer.location(in: self)
+        
+        if let entity = entity(at: location) as? ModelEntity {
+            arModelDeletionManager.entitySelectedFromDeletion = entity
+        }
     }
 }

@@ -39,7 +39,7 @@ struct DeletionView: View {
             
             Spacer()
         }
-        .paddig(.bottom, 30)
+        .padding(.bottom, 30)
     }
 }
 

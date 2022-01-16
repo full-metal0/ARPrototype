@@ -17,9 +17,10 @@ struct ARViewContainer: UIViewRepresentable {
     @EnvironmentObject var sessionSettings: SessionSettings
     @EnvironmentObject var sceneManager: SceneManager
     @EnvironmentObject var arModelsViewModel: ARModelsViewModel
+    @EnvironmentObject var arModelDeletionManager: ARModelDeletionManager
     
     func makeUIView(context: Context) -> CustomARView {
-        let arView = CustomARView(frame: .zero, sessionSettings: sessionSettings)
+        let arView = CustomARView(frame: .zero, sessionSettings: sessionSettings, arModelDeletionManager: arModelDeletionManager)
         
         arView.session.delegate = context.coordinator
         
