@@ -18,19 +18,8 @@ class PlacementSettings: ObservableObject {
         }
     }
     
-    // Property selectedModel is assigned to confirmedModel, when confirm button is tapped in PlacementView
-    @Published var confirmedModel: ARModel? {
-        willSet(newValue) {
-            guard let model = newValue else {
-                print("Clearing confirmed")
-                return
-            }
-            
-            self.recentlyPlaced.append(model)
-            
-            print("Setting confirmedModel to \(model.name)")
-        }
-    }
+    // Property keeps track of all the content that has been confirmed for placement in the scene
+    var arModelsConfirmedForPlacement: [ARModelAnchor] = []
     
     // Property - container for cancellable objects of SceneEvents.Update subscriber 
     var sceneObserver: Cancellable?

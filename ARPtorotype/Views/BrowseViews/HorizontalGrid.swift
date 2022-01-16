@@ -32,10 +32,12 @@ struct HorizontalGrid: View {
                         let model = items[index]
                         
                         ItemButton(model: model) {
-                            model.asyncLoadARModelEntity()
-                            self.placementSettings.selectedModel = model
-                            
-                            self.showBrowse = false
+                            model.asyncLoadARModelEntity { completed, error in
+                                if completed {
+                                    placementSettings.selectedModel = model
+                                }
+                            }
+                            showBrowse = false
                         }
                     }
                 }

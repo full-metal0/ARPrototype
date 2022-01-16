@@ -17,14 +17,16 @@ struct PlacementView: View {
             Spacer()
             
             PlacementButton(systemIconName: "xmark.circle.fill") {
-                self.placementSettings.selectedModel = nil
+                placementSettings.selectedModel = nil
             }
             
             Spacer()
             
             PlacementButton(systemIconName: "checkmark.circle.fill") {
-                self.placementSettings.confirmedModel = self.placementSettings.selectedModel
-                self.placementSettings.selectedModel = nil
+                let modelAnchor = ARModelAnchor(model: placementSettings.selectedModel!, anchor: nil)
+                placementSettings.arModelsConfirmedForPlacement.append(modelAnchor)
+                
+                placementSettings.selectedModel = nil
             }
             
             Spacer()
